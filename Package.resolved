@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "BencodingKit",
+        "repositoryURL": "https://github.com/Samasaur1/BencodingKit",
+        "state": {
+          "branch": null,
+          "revision": "70dafbf334fb401109c8bf5aa2b10dbb19e69a9f",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "TorrentKit",
+        "repositoryURL": "/Users/sam/Desktop/Files/Stormbreaker_Software/TorrentKit",
+        "state": {
+          "branch": "latest",
+          "revision": "8ac58ba991ab2eea5896a4f62249a82b1f4597af",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
