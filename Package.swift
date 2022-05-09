@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "torrentertest",
     platforms: [
-        .macOS(.v10_15)
+        .macOS(.v12)
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.

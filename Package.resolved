@@ -11,11 +11,29 @@
         }
       },
       {
+        "package": "Socket",
+        "repositoryURL": "https://github.com/Kitura/BlueSocket",
+        "state": {
+          "branch": null,
+          "revision": "dd924c3bc2c1c144c42b8dda3896f1a03115ded4",
+          "version": "2.0.2"
+        }
+      },
+      {
+        "package": "swift-argument-parser",
+        "repositoryURL": "https://github.com/apple/swift-argument-parser",
+        "state": {
+          "branch": null,
+          "revision": "6b2aa2748a7881eebb9f84fb10c01293e15b52ca",
+          "version": "0.5.0"
+        }
+      },
+      {
         "package": "TorrentKit",
         "repositoryURL": "/Users/sam/Desktop/Files/Stormbreaker_Software/TorrentKit",
         "state": {
           "branch": "latest",
-          "revision": "8ac58ba991ab2eea5896a4f62249a82b1f4597af",
+          "revision": "91ad84d48470722d332f973ead250817a402c583",
           "version": null
         }
       }

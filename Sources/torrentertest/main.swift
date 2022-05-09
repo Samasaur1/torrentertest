@@ -1,7 +1,41 @@
 import Foundation
 import BencodingKit
-@testable import TorrentKit
+import TorrentKit
 
+let path = URL(fileURLWithPath: "/Users/sam/Downloads/ubuntu-22.04-desktop-amd64.iso.torrent")
+//let path = URL(fileURLWithPath: "/Users/sam/Downloads/debian-11.3.0-amd64-netinst.iso.torrent") //doesn't have complete or incomplete keys, doesn't have peerIDs
+//let path = URL(fileURLWithPath: "/Users/sam/Downloads/archlinux-2022.05.01-x86_64.iso.torrent")
+
+DEBUG = true
+SOCKETEE = false
+
+let download = TorrentDownload(pathToTorrentFile: path)
+
+/*
+download.begin()
+
+let _ = readLine()
+
+download.stop()
+
+let _ = readLine()
+
+print("complete")
+*/
+Task {
+    await download.begin()
+
+    let _ = readLine()
+
+    await download.stop()
+
+    let _ = readLine()
+
+    print("complete")
+}
+while true {}
+
+/*
 let tf = try TorrentFile(fromContentsOf: .init(fileURLWithPath: "/Users/sam/Downloads/ubuntu-22.04-desktop-amd64.iso.torrent"))
 //let tf = try TorrentFile(fromContentsOf: .init(fileURLWithPath: "/Users/sam/Downloads/weathering-with-you_archive.torrent"))
 //let tf = try TorrentFile(fromContentsOf: .init(fileURLWithPath: "/Users/sam/Downloads/debian-11.3.0-amd64-netinst.iso.torrent"))
@@ -131,3 +165,4 @@ if let sfm = tf.singleFileMode {
 } else {
     fatalError("neither single noor multiple file")
 }
+*/
