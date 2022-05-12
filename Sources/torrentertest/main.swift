@@ -2,9 +2,15 @@ import Foundation
 import BencodingKit
 import TorrentKit
 
-let path = URL(fileURLWithPath: "/Users/sam/Downloads/ubuntu-22.04-desktop-amd64.iso.torrent")
+guard CommandLine.arguments.count > 1 else {
+    print("Usage: \(CommandLine.arguments[0]) <path to torrent file")
+    exit(1)
+}
+
+//let path = URL(fileURLWithPath: "/Users/sam/Downloads/ubuntu-22.04-desktop-amd64.iso.torrent")
 //let path = URL(fileURLWithPath: "/Users/sam/Downloads/debian-11.3.0-amd64-netinst.iso.torrent") //doesn't have complete or incomplete keys, doesn't have peerIDs
 //let path = URL(fileURLWithPath: "/Users/sam/Downloads/archlinux-2022.05.01-x86_64.iso.torrent")
+let path = URL(fileURLWithPath: CommandLine.arguments[1])
 
 DEBUG = true
 SOCKETEE = false
