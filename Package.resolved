@@ -30,10 +30,10 @@
       },
       {
         "package": "TorrentKit",
-        "repositoryURL": "/Users/sam/Desktop/Files/Stormbreaker_Software/TorrentKit",
+        "repositoryURL": "https://github.com/Samasaur1/TorrentKit",
         "state": {
-          "branch": "latest",
-          "revision": "37794cf518f5d12f2682bec99a04a46ca6c3e3de",
+          "branch": null,
+          "revision": "4f4d13d03c171199a101b873d80342386562e7d8",
           "version": null
         }
       }

@@ -10,8 +10,7 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
-        .package(url: "file:///Users/sam/Desktop/Files/Stormbreaker_Software/TorrentKit", branch: "latest"),
+        .package(url: "https://github.com/Samasaur1/TorrentKit", .revision("4f4d13d03c171199a101b873d80342386562e7d8")),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
